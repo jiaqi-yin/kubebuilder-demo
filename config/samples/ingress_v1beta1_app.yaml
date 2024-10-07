@@ -6,4 +6,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
   name: app-sample
 spec:
-  # TODO(user): Add fields here
+  image: nginx:1.27
+  replicas: 2
+  enable_ingress: true
+  enable_service: true
